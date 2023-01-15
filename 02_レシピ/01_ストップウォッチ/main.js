@@ -19,16 +19,3 @@ button.onclick = function () {
     button.textContent = "start"
   }
 }
-
-button.onclick = function () {
-  if (id === null) {
-    // start
-    id = setInterval(countUp, 10)
-    button.textContent = "stop"
-  } else {
-    // stop
-    clearInterval(id)
-    id = null
-    button.textContent = "start"
-  }
-}
